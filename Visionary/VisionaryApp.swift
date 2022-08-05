@@ -11,7 +11,8 @@ import SwiftUI
 struct VisionaryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CameraView()
+                .frame(width: 1920.0 / 1.5, height: 1080.0 / 1.5)
         }
     }
 }

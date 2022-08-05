@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500BC091289D443E00CB48E1 /* CameraFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BC090289D443E00CB48E1 /* CameraFeed.swift */; };
+		500BC093289D457F00CB48E1 /* HandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BC092289D457F00CB48E1 /* HandHandler.swift */; };
+		500BC095289D4ABE00CB48E1 /* HandGestureRecogniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BC094289D4ABE00CB48E1 /* HandGestureRecogniser.swift */; };
+		500BC097289D6A9700CB48E1 /* VisionaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BC096289D6A9700CB48E1 /* VisionaryViewModel.swift */; };
 		50371EFE289487C7005093B1 /* VisionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50371EFD289487C7005093B1 /* VisionaryApp.swift */; };
-		50371F00289487C7005093B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50371EFF289487C7005093B1 /* ContentView.swift */; };
 		50371F02289487CD005093B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50371F01289487CD005093B1 /* Assets.xcassets */; };
 		50371F05289487CD005093B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50371F04289487CD005093B1 /* Preview Assets.xcassets */; };
+		50DAEA3D289552EF007F22C7 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DAEA3C289552EF007F22C7 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		500BC090289D443E00CB48E1 /* CameraFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeed.swift; sourceTree = "<group>"; };
+		500BC092289D457F00CB48E1 /* HandHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandHandler.swift; sourceTree = "<group>"; };
+		500BC094289D4ABE00CB48E1 /* HandGestureRecogniser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandGestureRecogniser.swift; sourceTree = "<group>"; };
+		500BC096289D6A9700CB48E1 /* VisionaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionaryViewModel.swift; sourceTree = "<group>"; };
 		50371EFA289487C7005093B1 /* Visionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Visionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50371EFD289487C7005093B1 /* VisionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionaryApp.swift; sourceTree = "<group>"; };
-		50371EFF289487C7005093B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50371F01289487CD005093B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50371F04289487CD005093B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50371F06289487CD005093B1 /* Visionary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Visionary.entitlements; sourceTree = "<group>"; };
+		50DAEA3C289552EF007F22C7 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				50371EFD289487C7005093B1 /* VisionaryApp.swift */,
-				50371EFF289487C7005093B1 /* ContentView.swift */,
+				50DAEA3C289552EF007F22C7 /* CameraView.swift */,
+				500BC096289D6A9700CB48E1 /* VisionaryViewModel.swift */,
+				500BC090289D443E00CB48E1 /* CameraFeed.swift */,
+				500BC092289D457F00CB48E1 /* HandHandler.swift */,
+				500BC094289D4ABE00CB48E1 /* HandGestureRecogniser.swift */,
 				50371F01289487CD005093B1 /* Assets.xcassets */,
 				50371F06289487CD005093B1 /* Visionary.entitlements */,
 				50371F03289487CD005093B1 /* Preview Content */,
@@ -139,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50371F00289487C7005093B1 /* ContentView.swift in Sources */,
+				500BC091289D443E00CB48E1 /* CameraFeed.swift in Sources */,
+				500BC093289D457F00CB48E1 /* HandHandler.swift in Sources */,
 				50371EFE289487C7005093B1 /* VisionaryApp.swift in Sources */,
+				500BC095289D4ABE00CB48E1 /* HandGestureRecogniser.swift in Sources */,
+				500BC097289D6A9700CB48E1 /* VisionaryViewModel.swift in Sources */,
+				50DAEA3D289552EF007F22C7 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +290,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App must be able to see your hand gestures";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +318,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App must be able to see your hand gestures";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
