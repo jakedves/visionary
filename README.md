@@ -1,6 +1,6 @@
 # Visionary
 
-![Demonstation](https://github.com/jakedves/Visionary/ezgif.com-gif-maker.gif)
+![Demonstation](https://github.com/jakedves/Visionary/blob/main/ezgif.com-gif-maker.gif)
 
 This app is a small app that allows you to launch mission control using hand gestures. It is mainly a demo app so that you can do a similar thing.
 Code is documented in detailed comments where necessary and a rough over of each class is below, as well as a guide on taking this to iOS.
